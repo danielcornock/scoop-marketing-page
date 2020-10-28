@@ -1,0 +1,64 @@
+.Hero {
+  &-container {
+    @include page-container;
+  }
+
+  &-image {
+    border-radius: 20px;
+    width: 800px;
+    transform-origin: top left;
+    transform: scale(1.5);
+    box-shadow: 0 0 24px 8px rgba($color-primary, 30%);
+  }
+
+  &-content {
+    padding-top: 200px;
+    display: flex;
+  }
+
+  &-heading {
+    font-size: 54px;
+    color: $color-primary;
+    margin-bottom: $spacing-40;
+  }
+
+  &-actions {
+    display: flex;
+  }
+
+  &-action {
+    display: block;
+    padding: $spacing-15 $spacing-40;
+    border-radius: $br-med;
+    border: 3px solid $color-primary;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 250ms;
+
+    &--primary {
+      color: $color-white;
+      background-color: $color-primary;
+
+      &:hover {
+        background-color: darken($color-primary, 10%);
+        border-color: darken($color-primary, 10%);
+      }
+    }
+
+    &--secondary {
+      color: $color-primary;
+
+      &:hover {
+        background-color: $color-white;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    & + & {
+      margin-left: $spacing-10;
+    }
+  }
+}

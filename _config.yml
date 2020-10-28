@@ -1,0 +1,26 @@
+title: Scoop
+description: >-
+  Keep your finances under control.
+baseurl: ''
+url: 'https://www.scoopfinance.co.uk'
+image_dir: /assets/images/
+
+include: ['_pages']
+
+# Build settings
+markdown: kramdown
+
+collections:
+  projects:
+    output: true
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

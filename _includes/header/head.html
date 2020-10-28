@@ -1,0 +1,21 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% if page.description %}
+<meta name="description" content="{{ page.description }}" />
+{% else %}
+<meta name="description" content="{{ site.description }}" />
+{% endif %} {% if page.meta %}
+<meta name="keywords" content="{{ page.meta }}" />
+{% else %}
+<meta name="keywords" content="Finance application scoop" />
+{% endif %}
+<meta name="author" content="Daniel Cornock" />
+<link rel="stylesheet" href="{{ "assets/styles/index.css" | absolute_url }}" />
+<meta name="theme-color" content="#6246ea" />
+<title>
+  {% if page.title %} {{ page.title }} |{% endif %} Scoop
+</title>
+<link
+  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>

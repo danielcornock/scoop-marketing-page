@@ -1,0 +1,57 @@
+.Header {
+  &-container {
+    @include page-container;
+    padding: $spacing-30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-branding {
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+  }
+
+  &-brandingLogo {
+    display: block;
+    height: 34px;
+    margin-right: $spacing-10;
+  }
+
+  &-brandingText {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    bottom: 4px;
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &-navItem {
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 18px;
+
+    & + & {
+      margin-left: $spacing-60;
+    }
+  }
+
+  &-appButton {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: $spacing-15 $spacing-40;
+    border-radius: $br-med;
+    transition: 250ms;
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+      transform: scale(1.03);
+    }
+  }
+}
