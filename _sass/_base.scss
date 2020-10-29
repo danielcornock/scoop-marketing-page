@@ -7,7 +7,7 @@
 
 body {
   overflow-x: hidden;
-  background-image: url('../../assets/images/background.svg');
+  background-image: url('../../assets/images/background-repeat.svg');
 }
 button,
 a {
@@ -15,4 +15,8 @@ a {
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
+}
+
+.highlight {
+  color: $color-primary;
 }

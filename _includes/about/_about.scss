@@ -1,0 +1,41 @@
+.About {
+  &-container {
+    @include page-container;
+    padding-top: 350px;
+  }
+
+  &-heading {
+    color: $color-subheading;
+    font-size: 42px;
+    margin-bottom: 150px;
+    text-align: center;
+  }
+
+  &-content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &-image {
+    @include app-image;
+    transform-origin: top right;
+    transform: scale(1.5);
+    width: 50%;
+  }
+
+  &-details {
+    padding: 60px;
+  }
+
+  &-subheading {
+    color: $color-primary;
+    font-size: 36px;
+    margin-bottom: $spacing-20;
+  }
+
+  &-text {
+    color: $color-subheading;
+    font-size: 22px;
+    line-height: 2;
+  }
+}

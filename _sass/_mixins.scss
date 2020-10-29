@@ -4,3 +4,8 @@
   padding-right: $spacing-30;
   margin: auto;
 }
+
+@mixin app-image {
+  box-shadow: 0 0 24px 8px rgba($color-primary, 30%);
+  border-radius: 20px;
+}

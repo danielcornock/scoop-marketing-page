@@ -4,11 +4,10 @@
   }
 
   &-image {
-    border-radius: 20px;
+    @include app-image;
     width: 800px;
     transform-origin: top left;
     transform: scale(1.5);
-    box-shadow: 0 0 24px 8px rgba($color-primary, 30%);
   }
 
   &-content {
