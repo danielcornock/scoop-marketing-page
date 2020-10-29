@@ -1,4 +1,6 @@
 .About {
+  $cmp: &;
+
   &-container {
     @include page-container;
     padding-top: 350px;
@@ -14,6 +16,27 @@
   &-content {
     display: flex;
     align-items: flex-start;
+    position: relative;
+
+    & + & {
+      margin-top: 200px;
+    }
+
+    &--inverted {
+      flex-direction: row-reverse;
+
+      #{$cmp}-image {
+        transform-origin: top left;
+      }
+
+      #{$cmp}-details {
+        text-align: right;
+        padding: 60px 60px 0 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
   }
 
   &-image {
@@ -23,12 +46,20 @@
     width: 50%;
   }
 
+  &-subImage {
+    @include app-image;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 400px;
+  }
+
   &-details {
-    padding: 60px;
+    padding: 60px 0 60px 60px;
   }
 
   &-subheading {
-    color: $color-primary;
+    color: $color-subheading;
     font-size: 36px;
     margin-bottom: $spacing-20;
   }
@@ -36,6 +67,24 @@
   &-text {
     color: $color-subheading;
     font-size: 22px;
+    font-weight: 500;
     line-height: 2;
+  }
+
+  &-iconContainer {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary-light;
+    border-radius: $br-max;
+    margin-bottom: $spacing-20;
+  }
+
+  &-icon {
+    color: $color-primary;
+    height: 60px;
+    width: 60px;
   }
 }

@@ -37,13 +37,12 @@
     font-weight: 500;
     font-size: 18px;
     transition: 250ms;
-
-    & + & {
-      margin-left: $spacing-60;
-    }
+    padding: $spacing-15;
+    border-radius: $br-med;
+    margin-left: $spacing-30;
 
     &:hover {
-      transform: scale(1.03);
+      background-color: $color-primary-light;
     }
   }
 
@@ -53,10 +52,10 @@
     padding: $spacing-15 $spacing-40;
     border-radius: $br-med;
     transition: 250ms;
+    margin-left: $spacing-50 !important;
 
     &:hover {
       background-color: darken($color-primary, 10%);
-      transform: scale(1.03);
     }
   }
 }

@@ -52,10 +52,6 @@
       }
     }
 
-    &:hover {
-      transform: scale(1.03);
-    }
-
     & + & {
       margin-left: $spacing-10;
     }
