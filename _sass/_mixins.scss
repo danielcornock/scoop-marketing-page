@@ -1,4 +1,6 @@
 @mixin page-container {
-  max-width: 1400px;
+  max-width: 1450px;
+  padding-left: $spacing-30;
+  padding-right: $spacing-30;
   margin: auto;
 }
