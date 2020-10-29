@@ -19,7 +19,7 @@
   &-heading {
     font-size: 54px;
     color: $color-primary;
-    margin-bottom: $spacing-40;
+    margin-bottom: $spacing-30;
   }
 
   &-actions {
@@ -30,7 +30,7 @@
     display: block;
     padding: $spacing-15 $spacing-40;
     border-radius: $br-med;
-    border: 3px solid $color-primary;
+    border: 2px solid $color-primary;
     font-weight: 500;
     font-size: 18px;
     transition: 250ms;

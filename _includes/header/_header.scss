@@ -36,9 +36,14 @@
     color: $color-primary;
     font-weight: 500;
     font-size: 18px;
+    transition: 250ms;
 
     & + & {
       margin-left: $spacing-60;
+    }
+
+    &:hover {
+      transform: scale(1.03);
     }
   }
 
