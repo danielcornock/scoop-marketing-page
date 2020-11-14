@@ -50,6 +50,7 @@
 
     @include media($tablet) {
       transition: 250ms ease-in-out;
+      z-index: 900;
       position: fixed;
       right: -300px;
       top: 0;

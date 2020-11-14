@@ -3,7 +3,7 @@
 
   &-container {
     @include page-container;
-    padding-top: 350px;
+    padding-top: 450px;
 
     @include media(1450px) {
       padding-top: 0;

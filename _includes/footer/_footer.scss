@@ -2,6 +2,10 @@
   margin-top: 500px;
   background-color: $color-primary-gradient;
 
+  @include media($tablet) {
+    margin-top: 200px;
+  }
+
   &-container {
     @include page-container;
     padding-top: $spacing-30;
