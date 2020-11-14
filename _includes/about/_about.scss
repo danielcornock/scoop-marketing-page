@@ -67,6 +67,10 @@
       margin: auto;
       transform: initial;
     }
+
+    @include media(450px) {
+      border-radius: $br-sm;
+    }
   }
 
   &-subImage {
@@ -78,6 +82,14 @@
 
     @include media(1450px) {
       height: 40%;
+    }
+
+    @include media(600px) {
+      height: 20%;
+    }
+
+    @include media(450px) {
+      border-radius: $br-sm;
     }
   }
 
