@@ -8,17 +8,42 @@
     width: 800px;
     transform-origin: top left;
     transform: scale(1.5);
+
+    @include media(1450px) {
+      display: none;
+    }
+  }
+
+  &-left {
+    min-width: 590px;
+
+    @include media(1450px) {
+      min-width: initial;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 320px;
+      text-align: center;
+    }
   }
 
   &-content {
     padding-top: 200px;
     display: flex;
+
+    @include media(1450px) {
+      display: block;
+    }
   }
 
   &-heading {
     font-size: 54px;
     color: $color-primary;
     margin-bottom: $spacing-30;
+
+    @include media(450px) {
+      font-size: 36px;
+    }
   }
 
   &-actions {

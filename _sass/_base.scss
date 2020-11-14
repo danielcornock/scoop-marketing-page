@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background-image: url('../../assets/images/background-repeat.svg');
@@ -19,4 +23,33 @@ a {
 
 .highlight {
   color: $color-primary;
+  white-space: nowrap;
+
+  span {
+    display: inline-block;
+    animation: enter-list 2500ms forwards infinite;
+
+    position: relative;
+
+    @for $num from 1 through 20 {
+      &:nth-child(#{$num}) {
+        animation-delay: $num * 50ms;
+      }
+    }
+  }
+}
+
+@keyframes enter-list {
+  0% {
+    top: 0px;
+    transform: scale(1);
+  }
+  10% {
+    top: -5px;
+    transform: scale(1.1);
+  }
+  20% {
+    top: 0px;
+    transform: scale(1);
+  }
 }

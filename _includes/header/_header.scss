@@ -27,9 +27,42 @@
     bottom: 4px;
   }
 
+  &-menuButton {
+    display: none;
+    color: $color-primary;
+    position: relative;
+    z-index: 1000;
+
+    svg {
+      height: 30px;
+      width: 30px;
+      display: block;
+    }
+
+    @include media($tablet) {
+      display: block;
+    }
+  }
+
   &-nav {
     display: flex;
     align-items: center;
+
+    @include media($tablet) {
+      transition: 250ms ease-in-out;
+      position: fixed;
+      right: -300px;
+      top: 0;
+      bottom: 0;
+      flex-direction: column;
+      background-color: $color-white;
+      padding: 100px $spacing-40 $spacing-40;
+      box-shadow: 0 4px 16px rgba($color-primary, 0.5);
+
+      &.mobile-active {
+        right: 0;
+      }
+    }
   }
 
   &-navItem {
@@ -44,6 +77,13 @@
     &:hover {
       background-color: $color-primary-light;
     }
+
+    @include media($tablet) {
+      margin-left: 0 !important;
+      width: 100%;
+      text-align: center;
+      width: 200px;
+    }
   }
 
   &-appButton {
@@ -52,10 +92,14 @@
     padding: $spacing-15 $spacing-40;
     border-radius: $br-med;
     transition: 250ms;
-    margin-left: $spacing-50 !important;
+    margin-left: $spacing-50;
 
     &:hover {
       background-color: darken($color-primary, 10%);
+    }
+
+    @include media($tablet) {
+      margin-top: 20px;
     }
   }
 }
