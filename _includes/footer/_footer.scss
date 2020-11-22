@@ -1,10 +1,6 @@
 .Footer {
-  margin-top: 500px;
-  background-color: $color-primary-gradient;
-
-  @include media($tablet) {
-    margin-top: 200px;
-  }
+  // margin-top: 500px;
+  background-color: $color-primary;
 
   &-container {
     @include page-container;
