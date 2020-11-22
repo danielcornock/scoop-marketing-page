@@ -1,0 +1,38 @@
+.BottomPage {
+  &-container {
+    @include page-container;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-heading {
+    color: $color-subheading;
+    font-size: 36px;
+    margin-bottom: $spacing-40;
+    text-align: center;
+
+    @include media(450px) {
+      font-size: 26px;
+    }
+  }
+
+  &-action {
+    display: block;
+    padding: $spacing-15 $spacing-40;
+    border-radius: $br-med;
+    border: 2px solid $color-primary;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 250ms;
+    color: $color-white;
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+      border-color: darken($color-primary, 10%);
+    }
+  }
+}
