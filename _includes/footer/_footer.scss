@@ -1,21 +1,54 @@
 .Footer {
   // margin-top: 500px;
-  background-color: $color-primary-gradient;
+  background-color: $color-white;
+  background-color: rgb(107, 172, 232);
 
   &-container {
     @include page-container;
-    padding-top: $spacing-30;
-    padding-bottom: $spacing-30;
-    font-size: 18px;
-    color: $color-white;
+    padding-top: $spacing-15;
+    padding-bottom: $spacing-15;
+    font-size: 16px;
     font-weight: 500;
+    color: $color-white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media(700px) {
+      flex-direction: column;
+    }
   }
 
   &-link {
     color: $color-white;
+    font-weight: 600;
+
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  &-section {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    color: $color-white;
+    padding: 15px;
+
+    &:hover {
+      background-color: darken(rgb(107, 172, 232), 10%);
+    }
+  }
+
+  &-icon {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  &-label {
+    font-size: 16px;
   }
 }

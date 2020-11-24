@@ -1,8 +1,8 @@
 .BottomPage {
   &-container {
     @include page-container;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,5 +34,12 @@
       background-color: darken($color-primary, 10%);
       border-color: darken($color-primary, 10%);
     }
+  }
+
+  &-socialContainer {
+    background-color: rgb(107, 172, 232);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
   }
 }

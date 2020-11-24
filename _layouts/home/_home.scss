@@ -18,6 +18,7 @@
   }
 
   &-bottom {
-    background-color: $color-white;
+    background-image: url('../../assets/images/background-repeat.svg');
+    background-attachment: fixed;
   }
 }
