@@ -41,6 +41,12 @@
     }
   }
 
+  &-social {
+    @include media(450px) {
+      display: none;
+    }
+  }
+
   &-icon {
     display: block;
     height: 30px;
