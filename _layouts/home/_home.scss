@@ -18,7 +18,7 @@
   }
 
   &-bottom {
-    background-image: url('../../assets/images/background-repeat.svg');
-    background-attachment: fixed;
+    background-color: $color-white;
+    position: relative;
   }
 }

@@ -7,11 +7,16 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   overflow-x: hidden;
   background-image: url('../../assets/images/background-repeat.svg');
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 button,
 a {

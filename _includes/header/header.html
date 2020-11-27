@@ -1,13 +1,17 @@
 <div class="Header-container">
-  <div class="Header-branding">
-    <img class="Header-brandingLogo" src="../../assets/images/Gem.svg" alt="" />
+  <a href="/" class="Header-branding">
+    <img
+      class="Header-brandingLogo"
+      src="{{ 'assets/images/Gem.svg' | absolute_url }}"
+      alt=""
+    />
     <span class="Header-brandingText">scoop</span>
-  </div>
+  </a>
   <button class="Header-menuButton">
     <i data-feather="menu"></i>
   </button>
   <nav class="Header-nav">
-    <a href="" class="Header-navItem">Documentation</a>
+    <a href="/documentation" class="Header-navItem">Documentation</a>
     <a href="https://github.com/danielcornock/scoop" class="Header-navItem"
       >Contribute</a
     >

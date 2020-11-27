@@ -1,10 +1,14 @@
 .Header {
   &-container {
     @include page-container;
-    padding: $spacing-30;
+    padding: $spacing-50 $spacing-30;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media(1450px) {
+      padding: $spacing-30;
+    }
   }
 
   &-branding {

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% assign sorted = site.posts | sort: 'date' %}
+
+<div class="Documentation-container">
+  <div class="Documentation-headingContainer">
+    <h1 class="Documentation-heading">Documentation</h1>
+    <p class="Documentation-headingText">
+      Have a browse round the various sections and learn how to best utilise
+      everything Scoop has to offer.
+    </p>
+  </div>
+  <div class="Documentation-sections">
+    {% for post in sorted %}
+    <a href="{{ post.url }}" class="Documentation-section">
+      <div class="Documentation-iconContainer">
+        <i class="Documentation-icon" data-feather="{{ post.icon }}"></i>
+      </div>
+      <h2 class="Documentation-sectionTitle">{{ post.title }}</h2>
+      <p class="Documentation-sectionDescription">{{ post.description }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</div>

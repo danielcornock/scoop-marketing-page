@@ -1,0 +1,23 @@
+.Post {
+  &-container {
+    @include page-container;
+  }
+
+  &-headingContainer {
+    padding: 40px 0 50px;
+  }
+
+  &-heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: $color-primary;
+  }
+
+  &-headingText {
+    text-align: center;
+    font-size: 20px;
+    color: $color-heading;
+    font-weight: 500;
+  }
+}

@@ -1,8 +1,8 @@
 .BottomPage {
   &-container {
     @include page-container;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +29,13 @@
     transition: 250ms;
     color: $color-white;
     background-color: $color-primary;
+    position: relative;
+    z-index: 20;
+
+    @include media(450px) {
+      font-size: 16px;
+      text-align: center;
+    }
 
     &:hover {
       background-color: darken($color-primary, 10%);
@@ -36,10 +43,22 @@
     }
   }
 
-  &-socialContainer {
-    background-color: rgb(107, 172, 232);
-    display: flex;
-    justify-content: center;
-    padding: 15px;
+  &-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: transparent;
+      top: 10px;
+      right: 10px;
+      bottom: 10px;
+      left: 10px;
+      border: 5px dashed $color-primary;
+    }
   }
 }

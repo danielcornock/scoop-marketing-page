@@ -6,9 +6,17 @@ url: 'https://www.scoopfinance.co.uk'
 image_dir: /assets/images/
 
 include: ['_pages']
+permalink: /documentation/:title
 
 # Build settings
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post/post'
 
 collections:
   projects:
