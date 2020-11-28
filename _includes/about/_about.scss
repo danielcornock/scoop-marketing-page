@@ -70,6 +70,7 @@
 
     @include media(450px) {
       border-radius: $br-sm;
+      transform: scale(1.5);
     }
   }
 
