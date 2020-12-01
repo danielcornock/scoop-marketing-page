@@ -12,6 +12,10 @@
     font-size: 36px;
     margin-bottom: 10px;
     color: $color-primary;
+
+    @include media(450px) {
+      font-size: 30px;
+    }
   }
 
   &-headingText {
@@ -19,6 +23,10 @@
     font-size: 20px;
     color: $color-heading;
     font-weight: 500;
+
+    @include media(450px) {
+      font-size: 18px;
+    }
   }
 
   &-content {
@@ -56,9 +64,11 @@
   p {
     @include post-text;
     margin-bottom: 20px;
+    margin-top: 20px;
 
     &:first-child {
       color: lighten($color-primary, 8%);
+      margin-top: 0;
 
       font-weight: 500;
     }
@@ -69,6 +79,10 @@
     margin-top: 60px;
     margin-bottom: 20px;
     font-size: 30px;
+
+    @include media(450px) {
+      font-size: 26px;
+    }
   }
 
   code {

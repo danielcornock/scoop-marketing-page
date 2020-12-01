@@ -26,4 +26,5 @@ To configure your monthly distribution fields, head to settings and scroll down 
 - These item can be drag and dropped to be in the order that you want them to be in. This will determine the order that they appear on the form, and on the table.
 - To delete an item, press the little 'x' on the item that you want to delete.
 - You can add more fields by typing in your field name to the text input and hitting enter.
-- Don't forget to hit the `Save changes` button when you're done!
+
+Don't forget to hit the `Save changes` button when you're done!
