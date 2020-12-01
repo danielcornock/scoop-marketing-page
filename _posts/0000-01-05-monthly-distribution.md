@@ -5,13 +5,13 @@ description: >-
 icon: calendar
 ---
 
-The monthly distribution section allows you to track where your money is going each month. The idea of this section is not to track every small transaction, but to log the large outgoings of your account, and then working out how much money you have left to spend throughout the month.
+The monthly distribution section allows you to track where your money is going each month. The idea of this section is not to track every small transaction, but to log the large outgoings from your salary, and then working out how much money you have left to spend throughout the month.
 
 ## Creating a log
 
 Head to the monthly distribution section and hit the '+' button to open the form to create a new log.
 
-From there, you'll see a few fields. Every form will have a `Date`, `Income`, and `Balance carried from last month` field. The rest are configurable yourself in the [settings](#settings).
+From there, you'll see a few fields. Every form will have a `Date`, `Income`, and `Balance carried from last month` field. The rest are configurable yourself in the [settings](#configuring-your-fields).
 
 The calculations for this section work best if you log everything at the start of the month. This way, you can log the salary that you just received (at the end of the previous month), and then you can log the amount of cash carried over from the previous month (salary paid in minus the current balance in your account).
 

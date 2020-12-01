@@ -41,42 +41,47 @@
   }
 }
 
+@mixin post-text {
+  font-size: 18px;
+  line-height: 180%;
+  color: $color-subheading;
+  font-weight: 500;
+
+  @include media(450px) {
+    font-size: 16px;
+  }
+}
+
 .Post-content {
   p {
-    font-size: 18px;
-    line-height: 180%;
-    color: $color-subheading;
+    @include post-text;
     margin-bottom: 20px;
-    font-weight: 400;
 
     &:first-child {
-      font-size: 19px;
-      color: $color-primary-gradient;
+      color: lighten($color-primary, 8%);
 
       font-weight: 500;
     }
   }
 
   h2 {
-    color: $color-subheading;
-    margin-top: 40px;
+    color: lighten($color-primary, 8%);
+    margin-top: 60px;
     margin-bottom: 20px;
-    font-size: 26px;
+    font-size: 30px;
   }
 
   code {
-    font-family: monospace;
-    font-weight: 500;
     display: inline-block;
     padding: 0 10px;
-    line-height: 1.6;
+    line-height: 1.7;
     border-radius: 5px;
     background-color: #eee;
     font-size: 16px;
   }
 
   a {
-    color: $color-primary;
+    color: lighten($color-primary, 8%);
     font-weight: 600;
   }
 
@@ -88,10 +93,7 @@
   }
 
   li {
-    font-size: 18px;
-    line-height: 180%;
-    color: $color-subheading;
-    font-weight: 400;
+    @include post-text;
     margin-left: 20px;
 
     &:not(:first-child) {
